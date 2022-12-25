@@ -3,16 +3,16 @@ public class Main {
         int balance = 100;
         int addBalance = 1100;
         int bonus = 1;
-        int amount = (balance + addBalance);
+
         int addBonus;
-        if (amount >= 1000) {
-            addBonus = (amount / 100 * bonus);
+        if (addBalance >= 1000) {
+            addBonus = (addBalance / 100 * bonus);
         } else {
             addBonus = 0;
         }
+        int amount = (balance + addBalance +addBonus);
 
-
-        System.out.println("Баланс:" + amount + addBonus);
+        System.out.println("Баланс:" + amount + " в том числе колличество бонусных рублей: " + addBonus);
     }
 }
 
